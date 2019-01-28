@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- 通用 -->
+    <color name="white">#ffffff</color>
+    <color name="white_a40">#66ffffff</color><!--透明度40%-->
+    <color name="white_a10">#e6ffffff</color><!--透明度10%-->
+    <color name="white_a60">#99ffffff</color><!--透明度60%-->
+    <color name="rgb_00_a0">#00000000</color><!--透明度0%-->
+    <color name="rgb_00_a20">#33000000</color><!--透明度20%-->
+    <color name="rgb_00_a40">#66000000</color><!--透明度40%-->
+    <color name="rgb_00_a50">#7f000000</color><!--透明度50%-->
+    <color name="black_a60">#99000000</color><!--透明度60%-->
+    <color name="gray_80">#808080</color><!--透明度80%-->
+    <color name="black_33">#333333</color>
+    <color name="rgb_01">#010101</color>
+    <color name="rgb_01_a80">#cc010101</color><!--透明度80%-->
+    <color name="rgb_01_a60">#99010101</color><!--透明度60%-->
+    <color name="rgb_01_a40">#66010101</color><!--透明度40%-->
+    <color name="rgb_01_a8">#14010101</color><!--透明度8%-->
+    <color name="rgb_33_a60">#99333333</color><!--透明度60%-->
+    <!-- 通用 -->
+    <color name="line_ebe9ec">#ebe9ec</color>
+
+    <color name="red">#FFC93437</color>
+    <color name="blue">#FF375BF1</color>
+    <color name="yellow">#FFF7D23E</color>
+    <color name="green">#FF34A350</color>
+</resources>

@@ -1,0 +1,20 @@
+<resources>
+    <!--<string name="app_name">Update</string>-->
+    <string name="newest_version">最新版本</string>
+    <!-- 版本更新 -->
+    <string name="update_latest_version_found">发现新版本</string>
+    <string name="update_latest_version">最新版本： %s</string>
+    <string name="update_next">回头再说</string>
+    <string name="update_now">现在更新</string>
+    <string name="start_load"> 开始下载...</string>
+    <string name="installing_program"> 正在安装程序</string>
+    <string name="installing_fail"> 安装失败</string>
+    <string name="load_success"> 下载成功</string>
+    <string name="load_fail"> 下载失败</string>
+    <string name="mishi_new_versions">咪师校园新版本</string>
+    <string name="updata_Error">下载地址异常</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="wifi_ok">当前非WIFI环境是否确定下载？</string>
+    <string name="prompt">提示</string>
+</resources>

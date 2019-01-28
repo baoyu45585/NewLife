@@ -1,0 +1,8 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ms.android.mod_mine" >
+
+    <application>
+        <activity android:name=".act.SettingActivity" />
+    </application>
+
+</manifest>

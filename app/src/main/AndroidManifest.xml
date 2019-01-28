@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ms.android.newlife">
+
+    <application
+        android:name=".AppNewLife"
+        android:allowBackup="true"
+        android:icon="${APP_ICON}"
+        android:label="${APP_NAME}"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/FullScreenTheme">
+
+        <!-- autolayout屏幕适配 -->
+        <meta-data
+            android:name="design_width"
+            android:value="${APP_WIDTH}" />
+        <meta-data
+            android:name="design_height"
+            android:value="${APP_HEIGHT}" />
+        <!-- autolayout屏幕适配 -->
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".login.act.LoginActivity"/>
+    </application>
+
+</manifest>

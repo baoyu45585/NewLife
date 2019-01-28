@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 默认标题栏标题样式 -->
+    <style name="DefaultTitleStyle">
+        <item name="android:maxLength">20</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/font_size_xxxl</item>
+    </style>
+
+    <!--底部button样式 主要用于dialog-->
+    <style name="dialog_btn_style">
+        <item name="android:background">@drawable/btn_share_white_selector</item>
+        <item name="android:textSize">@dimen/design_32px</item>
+        <item name="android:layout_marginLeft">@dimen/design_30px</item>
+        <item name="android:layout_marginRight">@dimen/design_30px</item>
+        <item name="android:layout_height">@dimen/design_100px</item>
+    </style>
+</resources>

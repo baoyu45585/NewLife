@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ms.android.base.widget.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_all"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn_cancel"
+        style="@style/dialog_btn_style"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/design_20px"
+        android:text="@string/cancel"
+        android:textColor="@color/colorPrimary" />
+
+
+    <com.ms.android.base.widget.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_cancel"
+        android:layout_marginBottom="@dimen/design_20px"
+        android:layout_marginLeft="@dimen/design_30px"
+        android:layout_marginRight="@dimen/design_30px"
+        android:background="@drawable/btn_share_white_radius"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/design_60px"
+        android:paddingLeft="@dimen/design_30px"
+        android:paddingRight="@dimen/design_30px"
+        android:paddingTop="@dimen/design_60px">
+
+        <com.ms.android.base.widget.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.ms.android.base.widget.autolayout.AutoLinearLayout
+                android:id="@+id/ll_weifriend"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="@null"
+                    android:src="@mipmap/ic_share_weifriend" />
+
+                <TextView
+                    style="@style/text_rgb_33_a60_24px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/design_12px"
+                    android:text="@string/share_txt_weifriend" />
+
+            </com.ms.android.base.widget.autolayout.AutoLinearLayout>
+
+            <com.ms.android.base.widget.autolayout.AutoLinearLayout
+                android:id="@+id/ll_weichat"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="@null"
+                    android:src="@mipmap/ic_share_weichat" />
+
+                <TextView
+                    style="@style/text_rgb_33_a60_24px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/design_12px"
+                    android:text="@string/share_txt_weichat" />
+
+            </com.ms.android.base.widget.autolayout.AutoLinearLayout>
+
+            <com.ms.android.base.widget.autolayout.AutoLinearLayout
+                android:id="@+id/ll_qq"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="@null"
+                    android:src="@mipmap/ic_share_qq" />
+
+                <TextView
+                    style="@style/text_rgb_33_a60_24px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/design_12px"
+                    android:text="@string/share_txt_qq" />
+
+            </com.ms.android.base.widget.autolayout.AutoLinearLayout>
+
+            <com.ms.android.base.widget.autolayout.AutoLinearLayout
+                android:id="@+id/ll_sina_weibo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="@null"
+                    android:src="@mipmap/ic_share_sina_weibo" />
+
+                <TextView
+                    style="@style/text_rgb_33_a60_24px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/design_12px"
+                    android:text="@string/share_txt_sina_weibo" />
+
+            </com.ms.android.base.widget.autolayout.AutoLinearLayout>
+
+        </com.ms.android.base.widget.autolayout.AutoLinearLayout>
+
+        <com.ms.android.base.widget.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/design_60px">
+
+            <com.ms.android.base.widget.autolayout.AutoLinearLayout
+                android:id="@+id/ll_renren"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="@null"
+                    android:src="@mipmap/ic_share_renren" />
+
+                <TextView
+                    style="@style/text_rgb_33_a60_24px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/design_12px"
+                    android:text="@string/share_txt_renren" />
+
+            </com.ms.android.base.widget.autolayout.AutoLinearLayout>
+
+            <com.ms.android.base.widget.autolayout.AutoLinearLayout
+                android:id="@+id/ll_email"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="@null"
+                    android:src="@mipmap/ic_share_email" />
+
+                <TextView
+                    style="@style/text_rgb_33_a60_24px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/design_12px"
+                    android:text="@string/share_txt_email" />
+
+            </com.ms.android.base.widget.autolayout.AutoLinearLayout>
+
+            <com.ms.android.base.widget.autolayout.AutoLinearLayout
+                android:id="@+id/ll_sms"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="@null"
+                    android:src="@mipmap/ic_share_sms" />
+
+                <TextView
+                    style="@style/text_rgb_33_a60_24px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/design_12px"
+                    android:text="@string/share_txt_sms" />
+
+            </com.ms.android.base.widget.autolayout.AutoLinearLayout>
+
+            <com.ms.android.base.widget.autolayout.AutoLinearLayout
+                android:id="@+id/ll_copy"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="@null"
+                    android:src="@mipmap/ic_share_copy" />
+
+                <TextView
+                    style="@style/text_rgb_33_a60_24px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/design_12px"
+                    android:text="@string/share_txt_copy" />
+
+            </com.ms.android.base.widget.autolayout.AutoLinearLayout>
+
+        </com.ms.android.base.widget.autolayout.AutoLinearLayout>
+    </com.ms.android.base.widget.autolayout.AutoLinearLayout>
+
+
+</com.ms.android.base.widget.autolayout.AutoRelativeLayout>

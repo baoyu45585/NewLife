@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_1aad19">#1aad19</color>
+    <color name="rgb_33">#333333</color>
+    <color name="rgb_33_a60">#99333333</color><!--透明度60%-->
+    <color name="rgb_33_a40">#66333333</color><!--透明度40%-->
+    <color name="rgb_33_a20">#33333333</color><!--透明度20%-->
+    <color name="rgb_33_a10">#1A333333</color><!--透明度10%-->
+    <color name="rgb_33_a8">#14333333</color><!--透明度8%-->
+    <color name="rgb_33_a5">#0D333333</color><!--透明度8%-->
+</resources>

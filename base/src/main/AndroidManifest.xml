@@ -1,0 +1,31 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ms.android.base" >
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <!--友盟数据统计需要权限-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!--友盟数据统计需要权限-->
+
+    <application
+        android:allowBackup="true"
+        android:supportsRtl="true">
+
+        <!--有盟数据appKey配置 start-->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5b0bdb47b27b0a600f000156" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="Umeng" />
+        <!--有盟数据appKey配置 end-->
+
+    </application>
+</manifest>

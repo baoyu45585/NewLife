@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ms.android.base.widget.autolayout.AutoFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.ms.android.base.widget.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.ms.android.base.widget.autolayout.AutoLinearLayout
+            android:id="@+id/layout_title_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/design_156px"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/design_50px"
+            android:paddingRight="@dimen/design_50px">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/design_20px"
+                android:layout_marginTop="@dimen/design_50px"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/rgb_01"
+                android:textSize="@dimen/design_32px"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:paddingBottom="@dimen/design_30px"
+                android:textColor="@color/rgb_01"
+                android:textSize="@dimen/design_28px" />
+        </com.ms.android.base.widget.autolayout.AutoLinearLayout>
+
+        <TextView
+            android:id="@+id/tv_content2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:minHeight="@dimen/design_156px"
+            android:paddingLeft="@dimen/design_50px"
+            android:paddingRight="@dimen/design_50px"
+            android:textColor="@color/rgb_01"
+            android:textSize="@dimen/design_28px"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/design_1px"
+            android:background="@color/rgb_01_a8" />
+
+        <com.ms.android.base.widget.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/design_100px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_bottom_assist"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/rgb_01"
+                android:textSize="@dimen/design_28px"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/divider_bottom"
+                android:layout_width="@dimen/design_1px"
+                android:layout_height="match_parent"
+                android:background="@color/rgb_01_a8" />
+
+            <TextView
+                android:id="@+id/tv_bottom_primary"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/design_28px"
+                android:textStyle="bold" />
+        </com.ms.android.base.widget.autolayout.AutoLinearLayout>
+    </com.ms.android.base.widget.autolayout.AutoLinearLayout>
+</com.ms.android.base.widget.autolayout.AutoFrameLayout>

@@ -1,0 +1,88 @@
+<com.ms.android.base.widget.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/design_100px"
+    android:layout_marginRight="@dimen/design_100px"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/design_30px"
+        android:layout_marginTop="@dimen/design_50px"
+        android:gravity="center_horizontal"
+        android:paddingLeft="@dimen/design_40px"
+        android:paddingRight="@dimen/design_40px"
+        android:textColor="@color/rgb_01"
+        android:textSize="@dimen/design_30px"
+        android:textStyle="bold" />
+
+    <com.ms.android.base.widget.autolayout.AutoLinearLayout
+        android:id="@+id/ll_reactangle_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/design_50px"
+        android:layout_marginRight="@dimen/design_50px"
+        android:background="@drawable/shape_stroke_rgb_01_a8"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/design_30px"
+        android:paddingLeft="@dimen/design_30px"
+        android:paddingRight="@dimen/design_30px"
+        android:paddingTop="@dimen/design_30px">
+
+        <com.ms.android.base.widget.ClearEditText
+            android:id="@+id/input_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:minHeight="@dimen/design_110px"
+            android:textColor="@color/rgb_01"
+            android:textColorHint="@color/rgb_01_a40"
+            android:textSize="@dimen/design_28px" />
+
+    </com.ms.android.base.widget.autolayout.AutoLinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/design_1px"
+        android:layout_marginTop="@dimen/design_30px"
+        android:background="@color/rgb_01_a8" />
+
+    <com.ms.android.base.widget.autolayout.AutoRelativeLayout
+        android:id="@+id/layout_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/design_100px"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/flag_ll"
+            android:layout_width="@dimen/design_1px"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="@color/rgb_01_a8" />
+
+        <TextView
+            android:id="@+id/tv_bottom_assist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/flag_ll"
+            android:gravity="center"
+            android:textColor="@color/rgb_01_a80"
+            android:textSize="@dimen/design_30px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_bottom_primary"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/flag_ll"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/design_30px"
+            android:textStyle="bold" />
+    </com.ms.android.base.widget.autolayout.AutoRelativeLayout>
+</com.ms.android.base.widget.autolayout.AutoLinearLayout>

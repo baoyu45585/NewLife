@@ -1,0 +1,20 @@
+<resources>
+    <!--<string name="app_name">Update</string>-->
+    <string name="newest_version">The latest version</string>
+    <!-- 版本更新 -->
+    <string name="update_latest_version_found">Discover New Vrsion</string>
+    <string name="update_latest_version">Latest Version: %s</string>
+    <string name="update_next">Go Back And Say</string>
+    <string name="update_now">Update Now</string>
+    <string name="start_load"> Download Start...</string>
+    <string name="installing_program"> Installing Program</string>
+    <string name="installing_fail"> Installation Failed</string>
+    <string name="load_success"> Download Successful</string>
+    <string name="load_fail"> Download Failed</string>
+    <string name="mishi_new_versions">MISHI Campus New Version</string>
+    <string name="updata_Error">Download Address Exception</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="wifi_ok">Are you sure to download the current non-wifi environment?</string>
+    <string name="prompt">Prompt</string>
+</resources>

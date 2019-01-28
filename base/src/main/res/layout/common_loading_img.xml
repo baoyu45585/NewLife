@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ms.android.base.widget.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.ms.android.base.widget.autolayout.AutoFrameLayout
+        android:id="@+id/flLoad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_loading">
+
+        <ImageView
+            android:id="@+id/ivAnim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/design_30px"
+            android:src="@mipmap/loading_1" />
+    </com.ms.android.base.widget.autolayout.AutoFrameLayout>
+
+    <TextView
+        android:id="@+id/tvLoadMsg"
+        style="@style/text_rgb_01_28px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/flLoad"
+        android:layout_marginTop="@dimen/design_30px"
+        android:gravity="center"
+        android:text="@string/cm_loading" />
+
+</com.ms.android.base.widget.autolayout.AutoRelativeLayout>

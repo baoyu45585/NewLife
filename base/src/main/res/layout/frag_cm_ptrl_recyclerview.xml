@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ms.android.base.widget.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/line_ebe9ec"
+    android:orientation="vertical">
+
+    <in.srain.cube.views.ptr.PtrClassicFrameLayout
+        android:id="@+id/load_more_list_view_ptr_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.ms.android.base.widget.refresh.LoadMoreRecyclerViewContainer
+            android:id="@+id/load_more_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </com.ms.android.base.widget.refresh.LoadMoreRecyclerViewContainer>
+    </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+
+</com.ms.android.base.widget.autolayout.AutoLinearLayout>

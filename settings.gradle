@@ -1,0 +1,1 @@
+include ':app', ':base', ':mod_mine', ':mod_task', ':mod_bee',':sharesdk',':update'

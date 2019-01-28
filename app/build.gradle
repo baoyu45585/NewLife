@@ -1,0 +1,65 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion rootProject.compileSdkVersion
+    defaultConfig {
+        applicationId "com.ms.android.newlife"
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true// Enabling multidex support.
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a", "x86"
+        }
+        //arouter setting
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [moduleName: project.getName()]
+            }
+        }
+    }
+    signingConfigs {
+        release {
+            storeFile file("keystore/ms.jks")
+            storePassword "ms123456"
+            keyAlias "咪师校园"
+            keyPassword "ms123456"
+            v2SigningEnabled false
+        }
+    }
+
+    buildTypes {
+        debug {
+            manifestPlaceholders = [APP_NAME: "@string/app_name_debug", APP_ICON: "@mipmap/ic_launcher",APP_WIDTH: "750",APP_HEIGHT: "1334"]
+            minifyEnabled false
+            signingConfig signingConfigs.release
+            buildConfigField("boolean", "LOG_DEBUG", "true")
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        release {
+            manifestPlaceholders = [APP_NAME: "@string/app_name", APP_ICON: "@mipmap/ic_launcher",APP_WIDTH: "750",APP_HEIGHT: "1334"]
+            minifyEnabled false
+            signingConfig signingConfigs.release
+            buildConfigField("boolean", "LOG_DEBUG", "false")
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+
+repositories {
+    flatDir {
+        dirs 'libs' //this way we can find the .aar file in libs folder
+    }
+}
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(':base')
+    implementation project(':mod_mine')
+    //butterknife 动态框架配置,不可删除,不可继承
+    annotationProcessor "com.jakewharton:butterknife-compiler:$rootProject.butterKnifeVersion"
+    // 要与compiler匹配使用，均使用最新版可以保证兼容
+    annotationProcessor "com.alibaba:arouter-compiler:$rootProject.arouterCompilerVersion"
+}

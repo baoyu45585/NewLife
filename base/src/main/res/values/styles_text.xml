@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 这个文件主要存放不同textColor，textSize和textStyle属性样式 -->
+<resources>
+
+
+    <style name="text_rgb_01_26px">
+        <item name="android:textColor">@color/rgb_01</item>
+        <item name="android:textSize">@dimen/design_26px</item>
+    </style>
+
+    <style name="text_rgb_01_28px">
+        <item name="android:textColor">@color/rgb_01</item>
+        <item name="android:textSize">@dimen/design_28px</item>
+    </style>
+
+    <style name="text_rgb_33_a60_24px">
+        <item name="android:textColor">@color/rgb_33_a60</item>
+        <item name="android:textSize">@dimen/design_24px</item>
+    </style>
+</resources>

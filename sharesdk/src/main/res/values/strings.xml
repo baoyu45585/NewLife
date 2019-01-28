@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ShareSdk</string>
+    <string name="ssdk_gender_male">0</string>
+    <string name="ssdk_gender_female">1</string>
+</resources>

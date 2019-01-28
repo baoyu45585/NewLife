@@ -1,0 +1,103 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.jakewharton.butterknife'
+android {
+
+    compileSdkVersion rootProject.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        //arouter setting
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [moduleName: project.getName()]
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+repositories {
+    flatDir {
+        dirs 'libs' //this way we can find the .aar file in libs folder
+    }
+}
+dependencies {
+    api fileTree(dir: 'libs', include: ['*.jar'])
+    api project(':sharesdk')
+    api("com.android.support:appcompat-v7:$rootProject.appcompatVersion", {
+        exclude group: 'com.android.support', module: 'multidex'
+    })
+
+    //https://blog.csdn.net/jxf_access/article/details/79564669
+    api "com.android.support:design:$rootProject.appcompatVersion"
+    api "com.android.support.constraint:constraint-layout:$rootProject.constraintLayoutVersion"
+
+
+    api "com.android.support:recyclerview-v7:$rootProject.appcompatVersion"
+
+    //日记
+    api "com.orhanobut:logger:$rootProject.loggerVersion"
+
+    //注解框架butterknife
+    api "com.jakewharton:butterknife:$rootProject.butterKnifeVersion"
+
+    //运行时权限
+    api("pub.devrel:easypermissions:$rootProject.easyPermissionsVersion", {
+        exclude group: 'com.android.support', module: 'appcompat-v7'
+        exclude group: 'com.android.support', module: 'multidex'
+    })
+
+    //状态栏设置 https://github.com/laobie/StatusBarUtil
+    api('com.jaeger.statusbarutil:library:1.4.0', {
+        exclude group: 'com.android.support'
+    })
+
+    //友盟数据统计
+    api "com.umeng.analytics:analytics:$rootProject.analyticsVersion"
+
+    //分包框架
+    api "com.android.support:multidex:$rootProject.multidexVersion"
+
+    //net work
+    api "com.squareup.retrofit2:retrofit:$rootProject.retrofit2Version"
+    api "com.squareup.retrofit2:converter-gson:$rootProject.retrofit2Version"
+    api "com.squareup.retrofit2:adapter-rxjava:$rootProject.retrofit2Version"
+    api "io.reactivex:rxandroid:$rootProject.rxandroidVersion"
+
+    //eventBus
+    api "org.greenrobot:eventbus:$rootProject.eventbusVersion"
+
+    //广告页加载框
+    api "com.wang.avi:library:$rootProject.libraryVersion"
+
+    //多行文字对齐 http://www.jcodecraeer.com/a/opensource/2016/0121/3903.html
+    api "me.codeboy.android:align-text-view:$rootProject.textVersion"
+
+    //图片
+    api "com.github.bumptech.glide:glide:$rootProject.glideVersion"
+
+    // 替换成最新版本, 需要注意的是api
+    // 要与compiler匹配使用，均使用最新版可以保证兼容
+    api "com.alibaba:arouter-api:$rootProject.arouterApiVersion"
+    annotationProcessor "com.alibaba:arouter-compiler:$rootProject.arouterCompilerVersion"
+
+    //上下拉刷新控件
+ //   api "in.srain.cube:ultra-ptr:$rootProject.ultraVersion"
+    api 'in.srain.cube:ptr-load-more:1.0.5'
+    api 'in.srain.cube:clog:1.0.2'
+
+
+
+
+
+}
